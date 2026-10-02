@@ -1,0 +1,83 @@
+:root {
+    --brand: #175cd3;
+    --space: 1rem;
+    --surface: white;
+    --ink: #243244;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: var(--space);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background: #f4f6fa;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+p {
+    max-width: 65ch;
+}
+
+
+
+header,
+main {
+    padding: var(--space);
+    margin-bottom: var(--space);
+    background: var(--surface);
+    border: 1px solid #ddd;
+}
+
+main {
+    width: 90%;
+    max-width: 60rem;
+    margin-inline: auto;
+}
+
+
+
+
+.card {
+    padding: var(--space);
+    background: var(--surface);
+}
+
+form.card {
+    background: rgb(234, 240, 240);
+}
+
+.card p {
+    color: rgb(254, 9, 9);
+}
+
+.notice {
+    color: var(--brand);
+}
+
+button {
+    padding: .75rem 1rem;
+    color: white;
+    background: var(--brand);
+    border: 0;
+}
+
+
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
+}
