@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pendaftaran Kegiatan</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Selamat Datang di Situs Saya</h1>
+    <p>Halaman pertama Pengembangan Situs Web I.</p>
+  </header>
+
+  <main>
+
+    <h2>Profil Singkat</h2>
+
+    <img src="Gambar1.jpg" width="150" height="200" alt="Foto profil">
+
+    <p>Nama saya Sawate Jason Waruwu. Saya sedang belajar web.</p>
+
+    <section>
+      <h2>Tujuan Belajar</h2>
+
+      <ul>
+        <li>Memahami cara kerja web</li>
+        <li>Membuat halaman HTML</li>
+        <li>Menggunakan Git</li>
+      </ul>
+    </section>
+
+    <button type="button" id="greeting-button">
+      Tampilkan salam
+    </button>
+
+    <hr>
+
+    <h2>Pendaftaran Kegiatan</h2>
+
+    <figure>
+      <img
+        src="LogoSaya.jpeg"
+        alt="Logo kegiatan"
+        width="150"
+        height="200"
+      >
+      <figcaption>Logo kegiatan.</figcaption>
+    </figure>
+
+    <p class="notice">Kolom bertanda wajib harus diisi.Pastikan informasi yang dimasukkan sesuai dengan ketentuan dari formulir dan wajib memeriksa kembali sebelum di kirim.
+    </p>
+
+    <form class="card" action="#" method="get">
+
+      <label for="nama">Nama lengkap (wajib)</label>
+
+      <input
+        id="nama"
+        name="nama"
+        type="text"
+        autocomplete="name"
+        required
+      >
+
+      <label for="email">Email (wajib)</label>
+
+      <input
+        id="email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        required
+      >
+
+      <label for="telepon">Nomor Telepon</label>
+
+      <input
+        id="telepon"
+        name="telepon"
+        type="tel"
+        autocomplete="tel"
+      >
+
+      <label for="kode">Kode peserta (6 angka, wajib)</label>
+
+      <p id="kode-help">
+        Contoh: 001234. Gunakan tepat enam angka.
+      </p>
+
+      <input
+        id="kode"
+        name="kode"
+        type="text"
+        inputmode="numeric"
+        pattern="[0-9]{6}"
+        aria-describedby="kode-help"
+        required
+      >
+
+      <label for="prodi">Program studi (wajib)</label>
+
+      <select id="prodi" name="prodi" required>
+        <option value="">Pilih program studi</option>
+        <option value="trpl">D4 TRPL</option>
+        <option value="ti">D3 Teknologi Informasi</option>
+      </select>
+
+      <fieldset>
+        <legend>Mode kehadiran (wajib)</legend>
+
+        <input
+          id="luring"
+          name="mode"
+          type="radio"
+          value="luring"
+          required
+        >
+
+        <label for="luring">Luring</label>
+
+        <input
+          id="daring"
+          name="mode"
+          type="radio"
+          value="daring"
+        >
+
+        <label for="daring">Daring</label>
+      </fieldset>
+
+      <label for="tiket">Jumlah Tiket</label>
+
+      <input
+        id="tiket"
+        name="tiket"
+        type="number"
+        min="1"
+        max="5"
+        step="1"
+      >
+
+      <fieldset>
+        <legend>Topik yang diminati</legend>
+
+        <input
+          id="pengembangan-situs-web-1"
+          name="topik"
+          type="checkbox"
+          value="Pengembangan Situs Web 1"
+        >
+
+        <label for="pengembangan-situs-web-1">
+          Pengembangan Situs Web 1
+        </label>
+
+        <input
+          id="dasar-pemrograman"
+          name="topik"
+          type="checkbox"
+          value="Dasar Pemrograman"
+        >
+
+        <label for="dasar-pemrograman">
+          Dasar Pemrograman
+        </label>
+      </fieldset>
+
+      <label for="catatan">Catatan (opsional)</label>
+
+      <textarea
+        id="catatan"
+        name="catatan"
+        rows="4"
+        maxlength="300"
+      ></textarea>
+
+      <button type="submit">Daftar</button>
+
+    </form>
+
+  </main>
+
+  <footer>
+    <p>Dibuat untuk praktikum Pengembangan Situs Web I.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
