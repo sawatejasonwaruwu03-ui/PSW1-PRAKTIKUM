@@ -7,3 +7,9 @@ Mengubah font-size dari 1 menjadi 1.5 membuat huruf di website menjadi lebih bes
 font-size: 1rem menghasilkan ukuran teks sekitar 16px pada Computed.
 font-size: 1.5rem menghasilkan ukuran teks sekitar 24px pada Computed.
 Masalah  yang diperbaiki adalah aturan width: 240px pada main yang membuat ukuran wadah terlalu kecil. Aturan tersebut dihapus dan diganti dengan width: 90% serta max-width: 60rem agar wadah responsif dan dapat membesar sesuai ukuran layar.
+
+Saya melakukan perubahan pada tempat catatan yaitu mengubah kolom inputan menjadi dibawah catatan,saya menggunakan <div class="catatan">untuk pembungkus dari bagian catatan itu.
+Saya merubah pada css yaitu membuat display : flex,yaitu untuk mengatur dalam penggunaan flexbox
+Saya menambahkan flex-direction column untuk mengatur label dan textarea dari yang di atas menjadi kebawah
+Saya menambahkan align items flex-start yaitu untuk membuat keduanya dimulai dari sisi kiri
+Saya menambahkan gap 5px untuk memberikan spasi/jarak antara tulisan dan kotak catatan.

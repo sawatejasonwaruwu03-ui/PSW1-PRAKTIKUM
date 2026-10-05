@@ -1,8 +1,7 @@
-Style.css termuat 200,berarti css nya berjalan dengan baik.
-Hasil dari mengganti nama class adalah untuk membuktikan bahwa CSS hanya diterapkan kalau nama class-nya sesuai.
+1.Style.css termuat 200,berarti css nya berjalan dengan baik.
+2.Hasil dari mengganti nama class adalah untuk membuktikan bahwa CSS hanya diterapkan kalau nama class-nya sesuai.
 3.Karena .card p memiliki specificity yang lebih tinggi tidak bisa digantikan Jadi, meskipun .notice ditulis lebih dulu dan .card p ditulis setelahnya, .card p tetap menang.
 4.Lebar content adalah 240 px, padding kiri dan kanan masing-masing 16 px, serta border kiri dan kanan masing-masing 2 px.
-
 Lebar tanpa margin:
 240 + 16 + 16 + 2 + 2 = 276 px.
 5.Kasus normal CSS dan class sesuai (card, notice), Tindakan nya adalah Membuka halaman dan memeriksa CSS melalui DevTools,hasilnya adalah CSS berhasil diterapkan pada elemen yang memiliki class yang sesuai
