@@ -1,0 +1,1 @@
+1.Git Status:memeriksa perubahan file dan memastikan tidak ada file pribadi atau password yang ikut dilacak.

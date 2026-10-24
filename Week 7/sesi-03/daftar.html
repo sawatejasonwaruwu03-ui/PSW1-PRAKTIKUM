@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pendaftaran Kegiatan</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Bagian judul dan navigasi -->
+    <header>
+        <h1>Pendaftaran Kegiatan</h1>
+
+        <nav aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="daftar.html" aria-current="page">Daftar</a>
+        </nav>
+    </header>
+
+    <!-- Bagian utama pendaftaran -->
+    <main>
+
+        <!-- Kotak informasi pendaftaran -->
+        <section class="intro-pendaftaran">
+            <h2>Pendaftaran Kegiatan</h2>
+
+            <p>
+                Kolom bertanda wajib harus diisi. Pastikan informasi
+                yang dimasukkan sesuai dengan ketentuan dari formulir
+                dan periksa kembali sebelum dikirim.
+            </p>
+        </section>
+
+        <!-- Kotak formulir pendaftaran -->
+        <form class="card" action="#" method="get">
+
+            <label for="nama">Nama lengkap (wajib)</label>
+            <input id="nama" name="nama" type="text"
+                autocomplete="name" required>
+
+            <label for="email">Email (wajib)</label>
+            <input id="email" name="email" type="email"
+                autocomplete="email" required>
+
+            <label for="telepon">Nomor Telepon</label>
+            <input id="telepon" name="telepon" type="tel"
+                autocomplete="tel">
+
+            <label for="kode">Kode peserta (6 angka, wajib)</label>
+
+            <p id="kode-help">
+                Contoh: 001234. Gunakan tepat enam angka.
+            </p>
+
+            <input id="kode" name="kode" type="text"
+                inputmode="numeric" pattern="[0-9]{6}"
+                aria-describedby="kode-help" required>
+
+            <label for="prodi">Program studi (wajib)</label>
+
+            <select id="prodi" name="prodi" required>
+                <option value="">Pilih program studi</option>
+                <option value="trpl">D4 TRPL</option>
+                <option value="ti">D3 Teknologi Informasi</option>
+            </select>
+
+            <fieldset>
+                <legend>Mode kehadiran (wajib)</legend>
+
+                <label for="luring">
+                    <input id="luring" name="mode"
+                        type="radio" value="luring" required>
+                    Luring
+                </label>
+
+                <label for="daring">
+                    <input id="daring" name="mode"
+                        type="radio" value="daring">
+                    Daring
+                </label>
+            </fieldset>
+
+            <label for="tiket">Jumlah Tiket</label>
+            <input id="tiket" name="tiket" type="number"
+                min="1" max="5" step="1">
+
+            <fieldset>
+                <legend>Topik yang diminati</legend>
+
+                <label for="pengembangan-situs-web-1">
+                    <input id="pengembangan-situs-web-1"
+                        name="topik" type="checkbox"
+                        value="Pengembangan Situs Web 1">
+                    Pengembangan Situs Web 1
+                </label>
+
+                <label for="dasar-pemrograman">
+                    <input id="dasar-pemrograman"
+                        name="topik" type="checkbox"
+                        value="Dasar Pemrograman">
+                    Dasar Pemrograman
+                </label>
+            </fieldset>
+
+            <div class="catatan">
+                <label for="catatan">Catatan (opsional)</label>
+                <textarea id="catatan" name="catatan"></textarea>
+            </div>
+
+            <button type="submit">Daftar</button>
+
+        </form>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+    <aside>
+        <h2>Informasi Tambahan</h2>
+        <p>Pendaftaran anggota dibuka setiap semester.</p>
+    </aside>
+
+    <footer id="kontak">
+        <p>
+            Kontak:
+            <a href="mailto:multo@example.com">multo@example.com</a>
+        </p>
+    </footer>
+
+</body>
+</html>
